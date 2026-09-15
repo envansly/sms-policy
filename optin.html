@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Eric VanSlyke - SMS Opt-in Record</title><meta name="description" content="SMS opt-in record and recipient configuration for Eric VanSlyke, Sole Proprietor"><style>body{font-family:Georgia,serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.5;color:#222}h1,h2{font-family:Arial,sans-serif}pre{background:#f4f4f4;padding:12px;overflow:auto}</style></head><body>
+<h1>Eric VanSlyke &mdash; SMS Opt-in Record</h1>
+<p><strong>Brand: Eric VanSlyke (Sole Proprietor)</strong><br><strong>Sending number: (765) 633-8696</strong><br><strong>Last updated: September 15, 2026</strong></p>
+<h2>How opt-in works</h2>
+<p>This messaging program has one recipient: Eric VanSlyke, the sole proprietor who operates it. He opts in by adding his own mobile number to the recipient configuration file on his private server, along with the written consent statement below. The program reads this file on every run and will not send to any number that is not listed. There is no sign-up form, no keyword opt-in, and no other way for a number to be added. Only Eric VanSlyke can edit the file.</p>
+<h2>Consent statement</h2>
+<blockquote><p>I, Eric VanSlyke, agree to receive SMS notifications from Eric VanSlyke at (765) 633-8696 about my own email items, at the mobile number listed below. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help.</p></blockquote>
+<h2>Recipient configuration file</h2>
+<p>This is a copy of the live file on the server.</p>
+<pre># SMS recipient configuration
+# Brand: Eric VanSlyke (Sole Proprietor)
+# Sending number: +1 (765) 633-8696
+#
+# This file is the only place recipients are defined. The notification
+# script reads this list on every run and will not send to any number
+# that is not listed here. There is no sign-up form, no keyword opt-in,
+# and no other way for a number to be added. Only the account owner,
+# Eric VanSlyke, can edit this file.
+
+recipients:
+  - name: Eric VanSlyke
+    phone: "+13175405049"        # Eric VanSlyke's own mobile number
+    role: account owner and sole recipient
+    consent: >
+      I, Eric VanSlyke, agree to receive SMS notifications from
+      Eric VanSlyke at (765) 633-8696 about my own email items, at the
+      mobile number listed above. Message frequency varies. Message and
+      data rates may apply. Reply STOP to opt out or HELP for help.
+    consent_date: 2026-09-15
+    opt_out: reply STOP to +1 (765) 633-8696</pre>
+<p><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms and Conditions</a></p>
+</body></html>
